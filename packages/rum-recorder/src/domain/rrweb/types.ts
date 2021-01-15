@@ -179,6 +179,11 @@ export interface RecordOptions<T> {
   mousemoveWait?: number
 }
 
+export interface RecordAPI {
+  stop: ListenerHandler
+  takeFullSnapshot(): void
+}
+
 export interface ObserverParam {
   mutationCb: MutationCallBack
   mousemoveCb: MousemoveCallBack
